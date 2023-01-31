@@ -1,3 +1,9 @@
 <h1>{{title}}</h1>
+<p>{{TaskSummary()}}</p>
 <p *ngFor="let item of thingsToDo;
-let i= index;"> ({{i+1}}) {{item}}</p>
+let i = index;
+let rowOne = odd;
+let rowTwo = even;"
+[ngClass]="{ odd_row: rowOne, even_row:rowTwo}"> ({{i+1}}) {{item}}</p>
+<p *ngIf="thingsCompleted.length==0">Nothing completed yet</p>
+
