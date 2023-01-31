@@ -13,6 +13,8 @@ export class AppComponent {
     'Learn Redux'
   ];
   thingsCompleted=[];
+  name="Levi Gilmartin";
+  ID="S00227414";
 
   TaskSummary():string{
     return `${this.thingsToDo.length} to do / ${this.thingsCompleted.length} completed`;
