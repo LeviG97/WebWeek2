@@ -17,4 +17,10 @@ export class AppComponent {
   TaskSummary():string{
     return `${this.thingsToDo.length} to do / ${this.thingsCompleted.length} completed`;
   }
+
+  constructor() {
+    setInterval(() => {
+      this.thingsToDo.push('make coffee');
+    },5000);
+  }
 }
